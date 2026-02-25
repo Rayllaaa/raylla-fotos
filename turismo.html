@@ -1,100 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- ========================= -->
+  <!-- CONFIGURAÇÕES GERAIS SEO -->
+  <!-- ========================= -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ALTERAR AQUI se quiser mudar o título da aba -->
   <title>Turismo & Hospitalidade | Raylla Fotos</title>
-  <meta name="description" content="Conteúdo em vídeo para pousadas, hotéis e destinos turísticos. Vídeos para Instagram e TikTok que atraem hóspedes e criam experiências memoráveis antes do check-in.">
+
+  <!-- ALTERAR AQUI para melhorar SEO -->
+  <meta name="description" content="Conteúdo em vídeo para pousadas, hotéis e destinos turísticos.">
   <meta name="author" content="Raylla Fotos">
   <meta name="robots" content="index, follow">
 
+  <!-- ALTERAR AQUI se mudar URL -->
   <meta property="og:title" content="Turismo & Hospitalidade | Raylla Fotos">
-  <meta property="og:description" content="Vídeos estratégicos para pousadas e hotéis que querem lotar a agenda com conteúdo autêntico nas redes sociais.">
+  <meta property="og:description" content="Vídeos estratégicos para pousadas e hotéis.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rayllafotos.com.br/turismo.html">
 
+  <!-- FONTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
 
+  <!-- SEU DESIGN ESTÁ AQUI -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav class="nav" role="navigation" aria-label="Menu principal">
+  <!-- ========================= -->
+  <!-- MENU SUPERIOR -->
+  <!-- ========================= -->
+
+  <nav class="nav">
     <a href="index.html" class="nav__logo">Raylla</a>
+
     <ul class="nav__links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="turismo.html" class="nav--active" aria-current="page">Turismo</a></li>
+      <li><a href="turismo.html" class="nav--active">Turismo</a></li>
       <li><a href="espiritualidade.html">Espiritualidade</a></li>
       <li><a href="pilates.html">Pilates</a></li>
-      <li class="nav__cta"><a href="https://wa.me/5521972559455?text=Olá%20Raylla!%20Vi%20seu%20portfólio%20de%20turismo%20e%20quero%20conversar." target="_blank" rel="noopener">Contato</a></li>
+
+      <!-- ALTERE O WHATSAPP AQUI -->
+      <li class="nav__cta">
+        <a href="https://wa.me/5521972559455" target="_blank">Contato</a>
+      </li>
     </ul>
   </nav>
 
   <main class="page-wrap">
 
-    <section class="nicho-hero" aria-label="Turismo e Hospitalidade">
-      <div>
-        <span class="nicho-hero__tag nicho-hero__tag--turismo">Turismo & Hospitalidade</span>
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
 
-        <h1 class="nicho-hero__title nicho-hero__title--turismo">
-          Vídeos que fazem<br>o viajante <em>querer<br>estar lá.</em>
-        </h1>
-
-        <p class="nicho-hero__desc">
-          Conteúdo em vídeo estratégico para pousadas, hotéis e destinos que querem atrair mais hóspedes e criar experiências memoráveis antes mesmo do check-in.
-        </p>
-
-        <p class="nicho-hero__pain">
-          A maioria das pousadas depende 100% de indicação. O resultado? Agenda vazia na baixa temporada e sem controle sobre a captação de novos hóspedes. <strong>Conteúdo bem feito nas redes muda essa equação.</strong>
-        </p>
-
-        <a href="https://wa.me/5521972559455?text=Olá%20Raylla!%20Vi%20seu%20portfólio%20de%20turismo%20e%20quero%20conversar%20sobre%20um%20projeto."
-           target="_blank"
-           rel="noopener"
-           class="btn btn--dark">
-          Conversar sobre projeto em turismo
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="nicho-hero__stats" aria-label="Números">
-        <div class="stat">
-          <span class="stat__num">20+</span>
-          <span class="stat__label">Vídeos produzidos no nicho de turismo</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num">4</span>
-          <span class="stat__label">Formatos de conteúdo entregues</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num">100%</span>
-          <span class="stat__label">Foco em atrair hóspedes reais</span>
-        </div>
-      </div>
+    <section class="nicho-hero">
+      <h1 class="nicho-hero__title">
+        Vídeos que fazem o viajante querer estar lá.
+      </h1>
+      <p class="nicho-hero__desc">
+        Conteúdo estratégico para pousadas e destinos turísticos.
+      </p>
     </section>
 
-    <section class="services" aria-label="O que eu entrego">
-      <div class="service">
-        <div class="service__num">01</div>
-        <h3>Roteiro & Estratégia</h3>
-        <p>Planejamento do conteúdo alinhado ao seu público e à sazonalidade do turismo. Cada vídeo com um objetivo claro: atrair, engajar ou converter.</p>
-      </div>
-      <div class="service">
-        <div class="service__num">02</div>
-        <h3>Gravação & Edição</h3>
-        <p>Cortes dinâmicos, trilha, legendas animadas e motion. Conteúdo pronto para performar no Instagram e TikTok e fazer o viajante parar o scroll.</p>
-      </div>
-      <div class="service">
-        <div class="service__num">03</div>
-        <h3>Pacote Mensal</h3>
-        <p>Presença constante nas redes com conteúdo planejado todo mês. Você foca no hóspede, eu cuido do feed. Receita previsível de novos contatos.</p>
-      </div>
-    </section>
+    <!-- ========================= -->
+    <!-- ÁREA DE VÍDEOS -->
+    <!-- ========================= -->
 
-    <section class="videos-section" aria-label="Trabalhos em turismo">
+    <section class="videos-section">
+
       <div class="section-header">
         <h2>Trabalhos</h2>
         <span>Turismo & Hospitalidade</span>
@@ -102,103 +81,87 @@
 
       <div class="video-grid">
 
-        <div class="vtile" role="button" tabindex="0" data-video="RALFvHm2hG8" aria-label="Assistir: Pousada — Vídeo Institucional">
-          <img src="capa-video1-turismo.png" alt="Pousada — vídeo institucional" class="vtile__thumb">
+        <!-- ========================= -->
+        <!-- VÍDEO 1 -->
+        <!-- Para trocar:
+             - data-video = ID do YouTube
+             - src da imagem
+             - título -->
+        <!-- ========================= -->
+        <div class="vtile" role="button" data-video="rMpHPnT2CD0" tabindex="0">
+          <img src="capa-voo-livre.png"
+               alt="Pousada Casa São Conrado"
+               class="vtile__thumb">
+
           <div class="vtile__info">
-            <h4>Pousada — Institucional</h4>
+            <h4>Pousada — Casa São Conrado</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-        <div class="vtile" role="button" tabindex="0" aria-label="Assistir: Destino — Atmosfera">
-          <div class="vtile__bg vtile__bg--turismo">
-            <div class="vtile__play" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
+        <!-- ========================= -->
+        <!-- VÍDEO 2 -->
+        <!-- ========================= -->
+        <div class="vtile" role="button" data-video="SpQZW8gTWK0" tabindex="0">
+          <img src="capa-jazz1.png"
+               alt="Destino Atmosfera"
+               class="vtile__thumb">
+
           <div class="vtile__info">
             <h4>Destino — Atmosfera</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-        <div class="vtile" role="button" tabindex="0" aria-label="Assistir: Experiência — Storytelling">
-          <div class="vtile__bg vtile__bg--turismo">
-            <div class="vtile__play" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
-          <div class="vtile__info">
-            <h4>Experiência — Storytelling</h4>
-            <span>TikTok · Short</span>
-          </div>
-        </div>
+        <!-- ========================= -->
+        <!-- VÍDEO 3 -->
+        <!-- ========================= -->
+        <div class="vtile" role="button" data-video="RALFvHm2hG8" tabindex="0">
+          <img src="sexta-romantica1.png"
+               alt="Destino Atmosfera"
+               class="vtile__thumb">
 
-        <div class="vtile" role="button" tabindex="0" aria-label="Assistir: Pousada — Bastidores">
-          <div class="vtile__bg vtile__bg--turismo">
-            <div class="vtile__play" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
           <div class="vtile__info">
-            <h4>Pousada — Bastidores</h4>
+            <h4>Destino — Atmosfera</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-      </div>
-    </section>
+        <!-- ========================= -->
+        <!-- VÍDEO 4 -->
+        <!-- ========================= -->
+        <div class="vtile" role="button" data-video="bLwugARZ3KU" tabindex="0">
+          <img src="capa-crepe.png"
+               alt="Destino Atmosfera"
+               class="vtile__thumb">
 
-    <section class="testimonials" aria-label="Depoimentos de clientes">
-      <div class="section-header">
-        <h2>O que dizem</h2>
-        <span>Prints de WhatsApp</span>
-      </div>
-      <div class="testimonials__grid">
-        <div class="testimonial-img">
-          <p class="testimonial-img__placeholder">Print 1<br>WhatsApp</p>
+          <div class="vtile__info">
+            <h4>Destino — Atmosfera</h4>
+            <span>Reels · Instagram</span>
+          </div>
         </div>
-        <div class="testimonial-img">
-          <p class="testimonial-img__placeholder">Print 2<br>WhatsApp</p>
-        </div>
-        <div class="testimonial-img">
-          <p class="testimonial-img__placeholder">Print 3<br>WhatsApp</p>
-        </div>
-        <div class="testimonial-img">
-          <p class="testimonial-img__placeholder">Print 4<br>WhatsApp</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="cta-section" aria-label="Contato">
-      <h2>Pronta para <em style="font-style:italic;color:var(--warm)">lotar sua pousada</em> com conteúdo?</h2>
-      <div>
-        <p>Me conta sobre o seu negócio e a gente descobre juntas qual é o melhor caminho pra você aparecer de verdade nas redes e atrair hóspedes todo mês.</p>
-        <a href="https://wa.me/5521972559455?text=Olá%20Raylla!%20Vi%20seu%20portfólio%20de%20turismo%20e%20quero%20conversar%20sobre%20um%20projeto."
-           target="_blank"
-           rel="noopener"
-           class="btn btn--dark">
-          Conversar sobre projeto em turismo
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+        <!-- PARA ADICIONAR MAIS:
+             COPIE UM BLOCO .vtile INTEIRO E COLE AQUI -->
+
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <p>© 2025 Raylla Fotos — Todos os direitos reservados</p>
-    <a href="https://wa.me/5521972559455" target="_blank" rel="noopener">Rio de Janeiro, Brasil</a>
-  </footer>
+  <!-- ========================= -->
+  <!-- MODAL DO VÍDEO -->
+  <!-- NÃO PRECISA EDITAR NORMALMENTE -->
+  <!-- ========================= -->
 
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Reprodutor de vídeo">
-    <div class="modal__inner">
-      <button class="modal__close" id="modal-close" aria-label="Fechar vídeo">✕ Fechar</button>
-      <div class="modal__video-wrap">
-        <iframe id="modal-iframe" src="" allowfullscreen title="Vídeo do projeto"></iframe>
-      </div>
-    </div>
+  <div class="modal" id="modal">
+    <button id="modal-close">Fechar</button>
+    <iframe id="modal-iframe" src="" allowfullscreen></iframe>
   </div>
+
+  <!-- ========================= -->
+  <!-- SCRIPT DO MODAL -->
+  <!-- ========================= -->
 
   <script>
     const modal = document.getElementById('modal');
@@ -206,24 +169,26 @@
     const closeBtn = document.getElementById('modal-close');
 
     document.querySelectorAll('.vtile[data-video]').forEach(tile => {
+
       tile.addEventListener('click', () => {
         const id = tile.dataset.video;
         iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
         modal.classList.add('modal--open');
       });
+
       tile.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') tile.click();
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          tile.click();
+        }
       });
+
     });
 
-    function closeModal() {
+    closeBtn.addEventListener('click', () => {
       modal.classList.remove('modal--open');
       iframe.src = '';
-    }
-
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    });
   </script>
 
 </body>
