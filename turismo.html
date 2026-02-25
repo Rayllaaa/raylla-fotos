@@ -173,7 +173,7 @@
     <section class="cta-section" aria-label="Contato">
       <h2>Pronta para <em style="font-style:italic;color:var(--warm)">lotar sua pousada</em> com conteúdo?</h2>
       <div>
-        <p>Me conta sobre o seu negócio e a gente descobre juntos qual é o melhor caminho pra você aparecer de verdade nas redes e atrair hóspedes todo mês.</p>
+        <p>Me conta sobre o seu negócio e a gente descobre juntas qual é o melhor caminho pra você aparecer de verdade nas redes e atrair hóspedes todo mês.</p>
         <a href="https://wa.me/5521972559455?text=Olá%20Raylla!%20Vi%20seu%20portfólio%20de%20turismo%20e%20quero%20conversar%20sobre%20um%20projeto."
            target="_blank"
            rel="noopener"
@@ -208,4 +208,23 @@
     document.querySelectorAll('.vtile[data-video]').forEach(tile => {
       tile.addEventListener('click', () => {
         const id = tile.dataset.video;
-        iframe.src = `https://
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+        modal.classList.add('modal--open');
+      });
+      tile.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') tile.click();
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove('modal--open');
+      iframe.src = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  </script>
+
+</body>
+</html>
