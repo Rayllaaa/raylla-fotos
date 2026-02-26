@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- ========================= -->
-  <!-- CONFIGURAÇÕES GERAIS SEO -->
-  <!-- ========================= -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ALTERAR AQUI se quiser mudar o título da aba -->
-  <title>Turismo & Hospitalidade | Raylla Fotos</title>
+  <title>Vídeos para Pousadas e Hotéis | Raylla Fotos</title>
 
-  <!-- ALTERAR AQUI para melhorar SEO -->
-  <meta name="description" content="Conteúdo em vídeo para pousadas, hotéis e destinos turísticos.">
+  <meta name="description" content="Vídeos estratégicos para pousadas, hotéis e destinos turísticos que aumentam reservas e posicionamento digital.">
   <meta name="author" content="Raylla Fotos">
   <meta name="robots" content="index, follow">
 
-  <!-- ALTERAR AQUI se mudar URL -->
-  <meta property="og:title" content="Turismo & Hospitalidade | Raylla Fotos">
-  <meta property="og:description" content="Vídeos estratégicos para pousadas e hotéis.">
+  <meta property="og:title" content="Vídeos para Turismo | Raylla Fotos">
+  <meta property="og:description" content="Conteúdo estratégico para atrair mais hóspedes e valorizar seu destino.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rayllafotos.com.br/turismo.html">
 
@@ -27,163 +21,188 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
 
-  <!-- SEU DESIGN ESTÁ AQUI -->
   <link rel="stylesheet" href="style.css">
 
-<!-- ========================= -->
-<!-- ESTILO DO MODAL (CORRIGIDO DESKTOP) -->
-<!-- ========================= -->
-<style>
-  .modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    padding: 40px 20px;
-  }
+  <!-- ========================= -->
+  <!-- MODAL VERTICAL OTIMIZADO -->
+  <!-- ========================= -->
+  <style>
 
-  .modal--open {
-    display: flex;
-  }
+    body.modal-open {
+      overflow: hidden;
+    }
 
-  .modal__inner {
-    position: relative;
-    width: 100%;
-    max-width: 900px; /* 🔹 Limite elegante para desktop */
-  }
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.94);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
 
-  .modal__video-wrap {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 */
-  }
+    .modal--open {
+      display: flex;
+    }
 
-  .modal__video-wrap iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 12px;
-  }
-
-  .modal__close {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    background: #ffffff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-
-  @media (max-width: 768px) {
+    /* Desktop: simula proporção de celular centralizado */
     .modal__inner {
-      max-width: 100%;
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      margin: auto;
+    }
+
+    /* Proporção 9:16 real (vertical) */
+    .modal__video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 177.77%;
+    }
+
+    .modal__video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 18px;
+      background: #000;
     }
 
     .modal__close {
-      top: -60px;
+      position: absolute;
+      top: -45px;
+      right: 0;
+      background: #fff;
+      border: none;
+      padding: 8px 14px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 20px;
     }
-  }
-</style>
+
+    /* Mobile: ocupa praticamente toda a tela */
+    @media (max-width: 768px) {
+      .modal {
+        padding: 10px;
+      }
+
+      .modal__inner {
+        max-width: 100%;
+      }
+
+      .modal__close {
+        top: -50px;
+      }
+    }
+
+    /* CTA refinado */
+    .cta-primary {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      letter-spacing: .5px;
+      border-radius: 40px;
+      transition: .3s;
+    }
+
+    .cta-primary:hover {
+      opacity: .85;
+    }
+
+    .proof-section {
+      text-align: center;
+      max-width: 720px;
+      margin: 60px auto;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+  </style>
 </head>
 
 <body>
 
-  <!-- ========================= -->
-  <!-- MENU SUPERIOR -->
-  <!-- ========================= -->
-
   <nav class="nav">
     <a href="index.html" class="nav__logo">Raylla</a>
-
     <ul class="nav__links">
       <li><a href="index.html">Home</a></li>
       <li><a href="turismo.html" class="nav--active">Turismo</a></li>
       <li><a href="espiritualidade.html">Espiritualidade</a></li>
       <li><a href="pilates.html">Pilates</a></li>
-
-      <!-- ALTERE O WHATSAPP AQUI -->
       <li class="nav__cta">
-        <a href="https://wa.me/5521972559455" target="_blank">Contato</a>
+        <a href="https://wa.me/5521972559455" target="_blank">Solicitar Proposta</a>
       </li>
     </ul>
   </nav>
 
   <main class="page-wrap">
 
-    <!-- ========================= -->
-    <!-- HERO -->
-    <!-- ========================= -->
-
     <section class="nicho-hero">
       <h1 class="nicho-hero__title">
-        Vídeos que fazem o viajante querer estar lá.
+        Vídeos que aumentam reservas e posicionam sua pousada como destino.
       </h1>
       <p class="nicho-hero__desc">
-        Conteúdo estratégico para pousadas e destinos turísticos.
+        Produção estratégica para hotéis, pousadas e experiências turísticas que desejam atrair mais hóspedes e elevar percepção de valor.
       </p>
+
+      <a href="https://wa.me/5521972559455" target="_blank" class="cta-primary">
+        Quero Atrair Mais Hóspedes
+      </a>
     </section>
 
-    <!-- ========================= -->
-    <!-- ÁREA DE VÍDEOS -->
-    <!-- ========================= -->
+    <section class="proof-section">
+      <p>
+        Cada vídeo é planejado para gerar desejo imediato, transmitir atmosfera e transformar visualização em reserva.
+      </p>
+    </section>
 
     <section class="videos-section">
 
       <div class="section-header">
-        <h2>Trabalhos</h2>
+        <h2>Cases Recentes</h2>
         <span>Turismo & Hospitalidade</span>
       </div>
 
       <div class="video-grid">
 
-        <!-- ========================= -->
-        <!-- VÍDEO 1 -->
-        <!-- ========================= -->
         <div class="vtile" role="button" data-video="rMpHPnT2CD0" tabindex="0">
-          <img src="capa-voo-livre.png" alt="Pousada Casa São Conrado" class="vtile__thumb">
+          <img src="capa-voo-livre.png" alt="Pousada Casa São Conrado" class="vtile__thumb" loading="lazy">
           <div class="vtile__info">
             <h4>Pousada — Casa São Conrado</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-        <!-- ========================= -->
-        <!-- VÍDEO 2 -->
-        <!-- ========================= -->
         <div class="vtile" role="button" data-video="SpQZW8gTWK0" tabindex="0">
-          <img src="capa-jazz1.png" alt="Destino Atmosfera" class="vtile__thumb">
+          <img src="capa-jazz1.png" alt="Destino Atmosfera" class="vtile__thumb" loading="lazy">
           <div class="vtile__info">
             <h4>Destino — Atmosfera</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-        <!-- ========================= -->
-        <!-- VÍDEO 3 -->
-        <!-- ========================= -->
         <div class="vtile" role="button" data-video="RALFvHm2hG8" tabindex="0">
-          <img src="sexta-romantica1.png" alt="Destino Atmosfera" class="vtile__thumb">
+          <img src="sexta-romantica1.png" alt="Experiência Romântica" class="vtile__thumb" loading="lazy">
           <div class="vtile__info">
-            <h4>Destino — Atmosfera</h4>
+            <h4>Experiência — Fim de Semana</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
 
-        <!-- ========================= -->
-        <!-- VÍDEO 4 -->
-        <!-- ========================= -->
         <div class="vtile" role="button" data-video="bLwugARZ3KU" tabindex="0">
-          <img src="capa-crepe.png" alt="Destino Atmosfera" class="vtile__thumb">
+          <img src="capa-crepe.png" alt="Experiência Gastronômica" class="vtile__thumb" loading="lazy">
           <div class="vtile__info">
-            <h4>Destino — Atmosfera</h4>
+            <h4>Experiência — Gastronomia</h4>
             <span>Reels · Instagram</span>
           </div>
         </div>
@@ -191,12 +210,16 @@
       </div>
     </section>
 
+    <section class="proof-section">
+      <h3>Seu destino pode ser o próximo.</h3>
+      <a href="https://wa.me/5521972559455" target="_blank" class="cta-primary">
+        Solicitar Orçamento
+      </a>
+    </section>
+
   </main>
 
-  <!-- ========================= -->
-  <!-- MODAL DO VÍDEO -->
-  <!-- NÃO PRECISA EDITAR NORMALMENTE -->
-  <!-- ========================= -->
+  <!-- MODAL -->
 
   <div class="modal" id="modal">
     <div class="modal__inner">
@@ -207,35 +230,43 @@
     </div>
   </div>
 
-  <!-- ========================= -->
-  <!-- SCRIPT DO MODAL -->
-  <!-- ========================= -->
+  <!-- SCRIPT -->
 
   <script>
     const modal = document.getElementById('modal');
     const iframe = document.getElementById('modal-iframe');
     const closeBtn = document.getElementById('modal-close');
 
+    function openModal(id) {
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+      modal.classList.add('modal--open');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+      modal.classList.remove('modal--open');
+      iframe.src = '';
+      document.body.classList.remove('modal-open');
+    }
+
     document.querySelectorAll('.vtile[data-video]').forEach(tile => {
-
-      tile.addEventListener('click', () => {
-        const id = tile.dataset.video;
-        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
-        modal.classList.add('modal--open');
-      });
-
+      tile.addEventListener('click', () => openModal(tile.dataset.video));
       tile.addEventListener('keydown', e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          tile.click();
+          openModal(tile.dataset.video);
         }
       });
-
     });
 
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('modal--open');
-      iframe.src = '';
+    closeBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
     });
   </script>
 
